@@ -8,7 +8,7 @@ function prueba(event){
     console.log('Working correctly')
     function displayName(data) {
         console.log(data.login);
-        document.querySelector('.results').innerHTML =`
+        document.querySelector('.allData').innerHTML =`
         <h1>User: ${data.login}</h1>
         <h2>Name: ${data.name}</h2>
         <img style="width: 200px;" src = "${data.avatar_url}">
@@ -18,5 +18,5 @@ function prueba(event){
 
 }
 
-$( '.gitForm' ).on( 'submit', prueba )
+$( '.search' ).on( 'submit', prueba )
 
